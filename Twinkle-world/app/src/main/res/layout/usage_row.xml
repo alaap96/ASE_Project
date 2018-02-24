@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="72dp"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+        >
+
+        <ImageView android:id="@+id/app_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="4dp"
+            android:foregroundGravity="center_vertical"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:id="@+id/textview_package_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/app_icon"
+            style="@style/AppUsageText" />
+
+        <TextView
+            android:id="@+id/textview_time_used"
+            android:layout_alignParentRight="true"
+            android:layout_height="60dp"
+            android:layout_width="40dp"
+            style="@style/AppUsageTime"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
